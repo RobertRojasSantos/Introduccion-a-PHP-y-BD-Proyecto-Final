@@ -36,4 +36,8 @@ gestion-usuarios/
 1. Clonar o descargar este repositorio dentro de la carpeta `htdocs` de **XAMPP**.
 2. Encender los servicios de **Apache** y **MySQL** en el panel de control de XAMPP.
 3. Importar el archivo `database.sql` en **phpMyAdmin** (o conectar una base de datos existente con la tabla `usuarios`: `id`, `nombre`, `email`).
-4. Abrir en el navegador: `http://localhost/gestion-usuarios/index.php`
+4. Abrir el proyecto en el navegador:
+   * **Con configuración de puertos personalizada (Apache en puerto `8080` y SSL en `4433`):** `http://localhost:8080/gestion-usuarios/index.php`
+   * **Con configuración estándar de XAMPP (puerto `80`):** `http://localhost/gestion-usuarios/index.php`
+
+> **Nota de entorno:** En mi entorno local de XAMPP se modificaron los puertos de Apache del `80` al `8080` (HTTP) y del `443` al `4433` (HTTPS/SSL), por lo que las pruebas locales se realizaron bajo el puerto `8080`.
